@@ -2,16 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+// const elem = <h2 className="vasya">Hello World!</h2>; //or 
+// const elem = React.createElement('h1', {className: 'vasya'}, 'Hello World!'); //but this too large
+
+const text = 'Hello World!';
+
+const elem = (
+  <div>
+    <h2 className='vasya'>Текст: {text}</h2>
+    <input type="text" />
+    <button>Click</button> 
+  </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(
+  elem,
+  document.getElementById('root')
+); // these lines you must write on top of the file
