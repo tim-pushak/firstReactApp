@@ -2,8 +2,8 @@
 // import ReactDOM from 'react-dom';
 // import './index.css';
 // import App from './App';
-import {Header} from './App';
-import {Field} from './App';
+import {Header} from './components/app-older/older-app';
+import {Field} from './components/app-older/older-app';
 
 // components
 

@@ -2,7 +2,7 @@ import {Component, StrictMode} from 'react';
 import './App.css';
 
 const Header = () => {
-    return <h2>Hello world!</h2>
+  return <h2>Hello world!</h2>
 }
 
 // const Field = () => {
